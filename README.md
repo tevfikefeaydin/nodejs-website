@@ -1,2 +1,3 @@
 # nodejs-website
-.png, .jpg uzantılı resimler /img dosyası içerisinde olmalılar. Bunun haricinde farklı bir şey yoktur.
+.png, .jpg uzantılı resimler /img dosyası içerisinde olmalılar. Kodlar .html uzantılarının içerisinde güvenlik amacıyla firebase ile ilgili bağlantılar kaldırılmıştır.
+firebase ile ilgili kurulumlar kk

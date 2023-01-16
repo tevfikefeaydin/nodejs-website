@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Tevfik's Dynamic Pages - Anasayfa </title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- or -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!-- Font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+    
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/9.12.1/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/9.12.1/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/9.12.1/firebase-database-compat.js"></script>
+    <script defer src="/__/firebase/9.12.1/firebase-firestore-compat.js"></script>
+    <script defer src="/__/firebase/9.12.1/firebase-functions-compat.js"></script>
+    <script defer src="/__/firebase/9.12.1/firebase-messaging-compat.js"></script>
+    <script defer src="/__/firebase/9.12.1/firebase-storage-compat.js"></script>
+    <script defer src="/__/firebase/9.12.1/firebase-analytics-compat.js"></script>
+    <script defer src="/__/firebase/9.12.1/firebase-remote-config-compat.js"></script>
+    <script defer src="/__/firebase/9.12.1/firebase-performance-compat.js"></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+
+  </head>
+  <body>
+    <header class="custom-class">
+        <a href="https://tevfikefe.aktifsoft.com/" class="logo"><i class='bx bxl-nodejs'></i> Node.JS </a>
+        <ul class="navbar">
+            <li><a href="index.html" class="active"> Anasayfa </a></li>
+            <li><a href="kk.html"> Kullandığım Kaynaklar </a></li>
+        </ul>
+
+        <div class="color-switcher">
+          <div class="switcher-btn">
+            <i class='bx bx-menu-alt-right'></i>
+          </div>
+
+          <h3> Palet Seçiniz </h3>
+          <div class="theme-buttons-container">
+            <span class="color" data-color= "#ff597b, #ff8e9e, #f9b5d0 ,#ffe0ec" style="background: linear-gradient(to right, #ff597b,#ff8e9e,#f9b5d0,#ffe0ec );"></span>
+            <span class="color" data-color= "#594545, #815b5b, #9e7676, #fff8ea" style="background: linear-gradient(to right, #594545,#815b5b,#9e7676,#fff8ea );"></span>
+            <span class="color" data-color= "#285430, #5f8d4e, #a4be7b, #e5d9b6" style="background: linear-gradient(to right, #285430,#5f8d4e,#a4be7b,#e5d9b6 );"></span>
+            <span class="color" data-color= "#5997ed, #67d3e6, #a6e7f7, #a4ebe8" style="background: linear-gradient(to right, #5997ed,#67d3e6,#a6e7f7,#a4ebe8 );"></span>
+            <span class="color" data-color= "#2d033b, #810ca8, #c147e9, #e5b8f4" style="background: linear-gradient(to right, #2d033b,#810ca8,#c147e9,#e5b8f4 );"></span>
+            <span class="color" data-color= "#faab78, #ffdca9, #fcf9be, #e8f3d6" style="background: linear-gradient(to right, #faab78,#ffdca9,#fcf9be,#e8f3d6 );"></span>
+            <span class="color" data-color= "#28df99, #99f3bd, #d2f6c5, #f6f7d4" style="background: linear-gradient(to right, #28df99,#99f3bd,#d2f6c5,#f6f7d4 );"></span>
+            <span class="color" data-color= "#3a8891, #0e5e6f, #ffefd6, #f2deba" style="background: linear-gradient(to right, #3a8891,#0e5e6f,#ffefd6,#f2deba );"></span>
+          </div>
+
+        </div>
+      </header>
+
+      <section class="custom-class">
+        <div class="sec" id="sec">
+          <h2> Merhaba, Ben Tevfik Efe </h2>
+          <p> 
+              Adnan Menderes Üniversitesi Bilgisayar Programcılığı son sınıf öğrencisiyim.
+              Bu websitenin temel amacı nodejs, javascript, css ve html kullanarak palet üzerinden renk seçimi yaparak websitenin seçim üzerine renk ayarlarında değişiklik yapmasıdır.
+              <br><br>
+              Websitenin domain adresini google firebase üzerinden almış bulunmaktayım. İlk etapta hosting hizmeti için ücret ödemek istemezseniz kullanışlı bir hosting hizmet sağlayıcısıdır.
+              Kullanımı başlangıç için zor olsada sayfa üzerinde gezinerek bilgi sahibi olabilir, 'kullandığım kaynaklar' bölümünden firebase kurulumuna dair tüm ayrıntılara hakim olabilirsiniz.
+              <br><br>
+              Bu website birden fazla kaynak aracılığı ile yapılmış olup, kaynaklardan biride ChatGPT'dir. ChatGPT OpenAI tarafından geliştirilen ve diyalog konusunda uzmanlaşmış bir prototip yapay zekâ sohbet robotudur.
+              bu yapay zeka robotu tarafından oluşturulan bölümün kaynak kodları için <a href="https://github.com/DAMAR2401/app.js-w-chatGPT" target="_blank">tıklayınız.</a> 
+              <br><br>
+              Site üzerinde mdb'de kullanmaktadır. Material Design ve Bootstrap birleşiminden oluşan Mdbootstrap ücretsiz kullanımdadır. Twitter'da çalışan 2 mühendis tarafından geliştirilen ve geliştirildiği dönemden itibaren geliştiriciler tarafından büyük keyifle kullanılan Bootstrap, 
+              Google tarafından ortaya çıkarılan tasarım dili olan Material Design ile birleşmiştir.
+              <br><br>
+              Böyle bir website youtube üzerinde bulunmamaktadır. Yazmış olduğum tüm kaynak kodları GitHub üzerinden yayınlamaktayım. Projeniz için ihtiyacınız olması dahilinde kopyalama yapabilirsiniz. Zaten bu websitenin temel amacı budur.
+          </p>
+      </div>
+      </section>
+
+      <footer class=" custom-class text-center text-white footer">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a
+              class="btn text-white btn-floating m-1"
+              style="background-color: #3b5998;"
+              href="https://www.facebook.com/tevfikefe.aydin"
+              role="button"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+      
+            <!-- Twitter -->
+            <a
+              class="btn text-white btn-floating m-1"
+              style="background-color: #55acee;"
+              href="https://twitter.com/tevfikefe_eth"
+              role="button"
+              ><i class="fab fa-twitter"></i
+            ></a>
+      
+            <!-- Instagram -->
+            <a
+              class="btn text-white btn-floating m-1"
+              style="background-color: #ac2bac;"
+              href="https://www.instagram.com/tevfikefe.eth/"
+              role="button"
+              ><i class="fab fa-instagram"></i
+            ></a>
+      
+            <!-- Linkedin -->
+            <a
+              class="btn text-white btn-floating m-1"
+              style="background-color: #0082ca;"
+              href="https://www.linkedin.com/in/tevfik-efe-a-7b5a81142/"
+              role="button"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <!-- Github -->
+            <a
+              class="btn text-white btn-floating m-1"
+              style="background-color: #333333;"
+              href="https://github.com/DAMAR2401"
+              role="button"
+              ><i class="fab fa-github"></i
+            ></a>
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-3 custom-class">
+          © 2022 Copyright: -TEA-
+        </div>
+        <!-- Copyright -->
+      </footer>
+
+
+    <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-analytics.js"></script>
+    <script src="firebase.js"></script>
+    <script src="app.js"></script>
+    
+
+  </body>
+</html>
